@@ -76,9 +76,7 @@
               <div class="card-body">
                 <div class="d-flex">
                   <p class="d-flex flex-column">
-                    <div class="200">Alguns dos nossos sistemas foram desenvovidos especialmente para o setor correspondente,
-                       sendo assim procure utilizar apenas o sistema relacionado ao seu setor, caso não tenha acesso a outros 
-                       istemas solicite a TI que será anlisada a sua requisição</div>
+                    <div class="200">Você pode acessar as telas através do nosso menu lateral, o usuário comum só possui acesso ao lançamento das cópias, caso esteja faltando algum dado solicite a responsável da Gráfica para efetuar o lançamento</div>
                   </p>         
                 </div>
                 <!-- /.d-flex -->
@@ -104,7 +102,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgBiblioteca.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Biblioteca</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger">Setores</span></b></p>
                                   </div>
                                 </div>
                               </div>
@@ -113,7 +111,7 @@
                                 <div class="card" >
                                   <img src="assets/dist/img/imgGrafica.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Gráfica</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger">Cópias</span></b></p>
                                   </div>
                                 </div>
                               </div>
@@ -122,7 +120,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgOcorrencia.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Ocorrências</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger">Responsáveis</span></b></p>
                                   </div>
                                 </div>
                               </div>
@@ -131,7 +129,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgLaboratorio.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Secretaria</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger">Séries</span></b></p>
                                   </div>
                                 </div>
                               </div>
@@ -140,7 +138,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgSAude.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Saúde</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger">Disciplinas</span></b></p>
                                   </div>
                                 </div>
                               </div>
@@ -148,7 +146,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgPonto.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Ponto</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger">TI-Admin</span></b></p>
                                   </div>
                                 </div>
                               </div>

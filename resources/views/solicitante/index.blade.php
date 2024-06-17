@@ -122,11 +122,12 @@
                         
                           <td class="float-sm-right">
                           
-                                  <a class="btn btn-outline-dark" href="{{ route('solicitante.edit',['solicitante'=> $solicitante->id]) }}" >Alterar</a>
+  
                               
                                  <form id="formExcluir{{ $solicitante->id }}" action="{{ route('solicitante.destroy',['solicitante'=> $solicitante-> id]) }}" method="POST">
                                   @csrf
                                     @method('delete')
+                                    <a class="btn btn-outline-dark" href="{{ route('solicitante.edit',['solicitante'=> $solicitante->id]) }}" >Alterar</a>
                                     <a type="submit" onclick="confirmarExclusao(event, {{ $solicitante->id }})" class="btn btn-outline-danger float-end ms-2 px-3" href="{{ route('solicitante.destroy',['solicitante'=>$solicitante->id]) }}" >Excluir</a></td>
                                     {{-- <a type="submit" onclick="return confirm('Deseja realmente excluir esse registro ?')"  class="btn btn-outline-danger float-end ms-2 px-3" href="{{ route('solicitante.destroy',['solicitante'=>$solicitante->id]) }}" >Excluir</a></span></td> --}}
                                  </form> 
