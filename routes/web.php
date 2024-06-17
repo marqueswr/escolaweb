@@ -25,8 +25,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/solicitante-store',[SolicitanteController::class, 'store'])->name('solicitante.store');
     Route::get('/solicitante-edit-{solicitante}', [SolicitanteController::class, 'edit'])->name('solicitante.edit');
     Route::put('/solicitante-update-{solicitante}', [SolicitanteController::class, 'update'])->name('solicitante.update');
-    Route::get('/solicitante-destroy/{solicitante}', [SolicitanteController::class, 'destroy'])->name('solicitante.destroy');
-    Route::get('/solicitante/show/{solicitante}', [SolicitanteController::class, 'show'])->name('solicitante.show');
+    Route::delete('/solicitante-destroy-{solicitante}', [SolicitanteController::class, 'destroy'])->name('solicitante.destroy');
+    // Route::get('/solicitante/show/{solicitante}', [SolicitanteController::class, 'show'])->name('solicitante.show');
 });
 
 

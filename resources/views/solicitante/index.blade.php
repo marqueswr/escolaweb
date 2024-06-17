@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -19,7 +20,7 @@
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-home"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{ route('home') }}" class="nav-link">Página inicial</a>
@@ -120,8 +121,16 @@
                           <td> {{ $solicitante->nome }}</td>
                         
                           <td class="float-sm-right">
-                                  <a class="btn btn-outline-dark" href="{{ route('solicitante.edit',['solicitante'=>$solicitante->id]) }}" >Alterar</a>
-                                  <a type="submit" onclick="return confirm('apagar')"  class="btn btn-outline-danger float-end ms-2 px-3" href="{{ route('solicitante.destroy',['solicitante'=>$solicitante->id]) }}" >Excluir</a></span></td>
+                          
+                                  <a class="btn btn-outline-dark" href="{{ route('solicitante.edit',['solicitante'=> $solicitante->id]) }}" >Alterar</a>
+                              
+                                 <form id="formExcluir{{ $solicitante->id }}" action="{{ route('solicitante.destroy',['solicitante'=> $solicitante-> id]) }}" method="POST">
+                                  @csrf
+                                    @method('delete')
+                                    <a type="submit" onclick="confirmarExclusao(event, {{ $solicitante->id }})" class="btn btn-outline-danger float-end ms-2 px-3" href="{{ route('solicitante.destroy',['solicitante'=>$solicitante->id]) }}" >Excluir</a></td>
+                                    {{-- <a type="submit" onclick="return confirm('Deseja realmente excluir esse registro ?')"  class="btn btn-outline-danger float-end ms-2 px-3" href="{{ route('solicitante.destroy',['solicitante'=>$solicitante->id]) }}" >Excluir</a></span></td> --}}
+                                 </form> 
+
                           </td>
                        
                         </tr>

@@ -62,7 +62,8 @@ class SolicitanteController extends Controller
 
     public function destroy(Solicitante $solicitante)
     {
-       // $disciplina->delete();
+        
+       //dd("apagar");
     
         Solicitante::findOrFail($solicitante->id)->delete();
         return redirect()-> route('solicitante.index')-> with('success', 'Solicitante excluído com sucesso');
