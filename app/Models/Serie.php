@@ -10,4 +10,11 @@ class Serie extends Model
     use HasFactory;
     protected $table = 'Series';
     protected $fillable = ['nome'];
+
+     public function copias()
+    {
+        return $this->hasMany(Copia::class);
+    } 
 }
+
+

@@ -7,11 +7,13 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="storage/{{ auth()->user()->photo }}" class="img-circle elevation-2" alt="User Image">
+          <img src="storage/{{ auth()->user()->photo }}" class="img-circle elevation-1" style="width:80px;height=80" alt="User Image">
         </div>
         <div style="margin-left: 5px;font-size:14px;text-color:white">
-          <a href="#" class="d-block">{{ auth()->user()->name }}</a>
-          <a href="#" class="d-block">{{ auth()->user()->email }}</a>
+          <br><br>
+          <span style="color:white"> &nbsp;&nbsp;Logado como</span>
+          <a href="#" class="d-block">&nbsp;&nbsp;{{ auth()->user()->name }}</a>
+          {{-- <a href="#" class="d-block">{{ auth()->user()->email }}</a> --}}
         </div>
       </div>
       <!-- Sidebar Menu -->

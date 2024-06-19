@@ -10,4 +10,9 @@ class Disciplina extends Model
     use HasFactory;
     protected $table = 'Disciplinas';
     protected $fillable = ['nome'];
+
+     public function copias()
+    {
+        return $this->hasMany(Copia::class);
+    } 
 }

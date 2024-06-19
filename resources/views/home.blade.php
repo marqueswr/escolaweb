@@ -69,7 +69,7 @@
             <div class="card">
               <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Seja bem vindo(a) a nossa página inicial dos sistemas</h3>
+                  <h3 class="card-title">Seja bem vindo(a) a nossa página inicial do sistema da Gráfica</h3>
                  
                 </div>
               </div>
@@ -102,7 +102,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgBiblioteca.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Setores</span></b></p>
+                                   <p class="card-text"><b><span class="alert alert-danger" ><a class="alert alert-danger" style="text-decoration: none" href="{{ route('setor.index') }}">Setores</a></span></b></p>  
                                   </div>
                                 </div>
                               </div>
@@ -111,7 +111,7 @@
                                 <div class="card" >
                                   <img src="assets/dist/img/imgGrafica.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Cópias</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger" ><a style="text-decoration: none" href="{{ route('setor.index') }}">Cópias</a></span></b></p>  
                                   </div>
                                 </div>
                               </div>
@@ -120,7 +120,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgOcorrencia.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Responsáveis</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger" ><a style="text-decoration: none" href="{{ route('solicitante.index') }}">Responsáveis</a></span></b></p>  
                                   </div>
                                 </div>
                               </div>
@@ -129,7 +129,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgLaboratorio.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Séries</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger" ><a style="text-decoration: none" href="{{ route('serie.index') }}">Séries</a></span></b></p>  
                                   </div>
                                 </div>
                               </div>
@@ -138,7 +138,7 @@
                                 <div class="card">
                                   <img src="assets/dist/img/imgSAude.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger">Disciplinas</span></b></p>
+                                    <p class="card-text"><b><span class="alert alert-danger" ><a style="text-decoration: none" href="{{ route('disciplina.index') }}">Disciplinas</a></span></b></p>  
                                   </div>
                                 </div>
                               </div>

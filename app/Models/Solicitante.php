@@ -11,4 +11,9 @@ class Solicitante extends Model
     
     protected $table = 'Solicitantes';
     protected $fillable = ['nome'];
+
+     public function copias()
+     {
+         return $this->hasMany(Copia::class);
+     }
 }
