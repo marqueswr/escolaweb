@@ -41,13 +41,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h5 class="m-0"><b>Gráfica - Solicitantes - Alterar</b></h5>
+            <h5 class="m-0"><b>Gráfica - Setores - Alterar</b></h5>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item">
                 <a href="{{ route('login.logout') }}" class="btn btn-outline-primary"><i class="fas fa-unlock"></i></a> 
-                <a href="{{ route('solicitante.index') }}" class="btn btn-outline-dark" >Listagem</a>
+                <a href="{{ route('setor.index') }}" class="btn btn-outline-dark" >Listagem</a>
               </li>
             </ol>
           </div>
@@ -71,7 +71,7 @@
                 <div class="card">
                   <div class="card-header">
                   <!-- /.card-header -->
-                  <form action="{{ route('solicitante.update',['solicitante' => $solicitante->id]) }}" method="POST">
+                  <form action="{{ route('setor.update',['setor' => $setor->id]) }}" method="POST">
                     @csrf
                     @method('PUT')
                   <div class="card-body table-responsive p-0">
@@ -80,7 +80,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text">NOME:</span>
                    
-                      <input style="width: 850px" type="text" class="form-control" id="nome" value="{{ old('nome', $solicitante->nome) }}"  name="nome" placeholder="informe o nome do solicitante aqui" >       
+                      <input style="width: 850px" type="text" class="form-control" id="nome" value="{{ old('nome', $setor->nome) }}"  name="nome" placeholder="informe o nome do setor aqui" >       
         </div>
                       <button type="submit" class="btn btn-success md ml-2">ALTERAR</button>
                     </div>   
