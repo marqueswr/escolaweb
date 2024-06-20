@@ -111,7 +111,7 @@
                                 <div class="card" >
                                   <img src="assets/dist/img/imgGrafica.jpg" class="card-img-top">
                                   <div class="card-body alert alert-danger">
-                                    <p class="card-text"><b><span class="alert alert-danger" ><a style="text-decoration: none" href="{{ route('setor.index') }}">Cópias</a></span></b></p>  
+                                    <p class="card-text"><b><span class="alert alert-danger" ><a style="text-decoration: none" href="{{ route('copia.index') }}">Cópias</a></span></b></p>  
                                   </div>
                                 </div>
                               </div>

@@ -83,6 +83,7 @@
                       <input style="width: 850px" type="text" class="form-control" id="nome" value="{{ old('nome', $setor->nome) }}"  name="nome" placeholder="informe o nome do setor aqui" >       
         </div>
                       <button type="submit" class="btn btn-success md ml-2">ALTERAR</button>
+                      <a href="{{ route('setor.index') }}" class="btn btn-outline-dark" >CANCELAR</a>
                     </div>   
                   </div>
                 </form>

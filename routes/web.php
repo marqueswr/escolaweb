@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CopiaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SerieController;
 use App\Http\Controllers\SetorController;
@@ -61,6 +62,17 @@ Route::middleware('auth')->group(function () {
     Route::put('/setor-update-{setor}', [SetorController::class, 'update'])->name('setor.update');
     Route::delete('/setor-destroy-{setor}', [SetorController::class, 'destroy'])->name('setor.destroy');
     // Route::get('/solicitante/show/{solicitante}', [SolicitanteController::class, 'show'])->name('solicitante.show');
+});
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/copia', [CopiaController::class, 'index'])->name('copia.index');
+    Route::get('/copia-create',[CopiaController::class, 'create'])->name('copia.create');
+    Route::post('/copia-store',[CopiaController::class, 'store'])->name('copia.store');
+    Route::get('/copia-edit-{copia}', [CopiaController::class, 'edit'])->name('copia.edit');
+    Route::put('/copia-update-{copia}', [CopiaController::class, 'update'])->name('copia.update');
+    Route::delete('/copia-destroy-{copia}', [CopiaController::class, 'destroy'])->name('copia.destroy');
+    Route::get('/copia-show-{copia}', [CopiaController::class, 'show'])->name('copia.show');
 });
 
 Route::get('/logout',[LoginController::class,'logout'])->name('login.logout');
