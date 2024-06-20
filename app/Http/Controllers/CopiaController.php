@@ -142,4 +142,19 @@ class CopiaController extends Controller
         Copia::findOrFail($copia->id)->delete();
         return redirect()-> route('copia.index')-> with('success', 'Registro de cópia excluído com sucesso');
     }
+
+    public function pormes(Request $request)
+    {
+        $copias = Copia::when ($request->has('parametro'), function($whenQuery) use ($request){
+            $whenQuery->where('mes', '=', $request->parametro);
+        })
+        ->orderByDesc('dtasolicitacao')->paginate(30);
+  
+        $quantidadeTotal = $copias->sum('quantidade');
+        return view('copia.pormes', [
+            'copias'=> $copias,
+            'quantidadeTotal' => $quantidadeTotal,
+            'parametro'=> $request->parametro,
+        ]);
+    }
 }

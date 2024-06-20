@@ -34,32 +34,45 @@
                 {{-- <span class="badge badge-danger right">cópias</span> --}}
               </p>
             </a>
+
+          
             <ul class="nav nav-treeview">
+              @can('operacoes_setores')
               <li class="nav-item">
                 <a href="{{ route('setor.index') }}" class="nav-link">
                  {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setores</p>
                 </a>
               </li>
+              @endcan
+
+              @can('operacoes_solicitantes')
               <li class="nav-item">
                 <a href="{{ route('solicitante.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Responsáveis</p>
                 </a>
               </li>
+              @endcan
+
+              @can('operacoes_series')
               <li class="nav-item">
                 <a href="{{ route('serie.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Séries</p>
                 </a>
               </li>
+              @endcan
+
+              @can('operacoes_disciplinas')
               <li class="nav-item">
                 <a href="{{ route('disciplina.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disciplinas</p>
                 </a>
               </li>
-             
+             @endcan
+
             </ul>
           </li>
           <li class="nav-item">
@@ -84,7 +97,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-id-card"></i>
+              <i class="nav-icon fas fa-eye"></i>
               <p>
                 Consultas
                 <i class="right fas fa-angle-left"></i>
@@ -93,40 +106,51 @@
             </a>
             <ul class="nav nav-treeview">
 
+              @can('consultas')
               <li class="nav-item">
-                <a href="{{ route('copia.index') }}" class="nav-link">
+                <a href="{{ route('copia.pormes') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mês</p>
                 </a>
               </li>
-
+              @endcan
+              
+              @can('consultas')
               <li class="nav-item">
                 <a href="{{ route('copia.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setor</p>
                 </a>
               </li>
+              @endcan
 
+              @can('consultas')
               <li class="nav-item">
                 <a href="{{ route('copia.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mês e Setor</p>
                 </a>
               </li>
+              @endcan
 
+              @can('consultas')
               <li class="nav-item">
                 <a href="{{ route('copia.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Datas</p>
                 </a>
               </li>
+              @endcan
 
+              @can('consultas')
               <li class="nav-item">
                 <a href="{{ route('copia.index') }}" class="nav-link">
                   {{-- <i class="fa fa-file nav-icon"></i>  --}}
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipo</p>
                 </a>
               </li>
+              @endcan
+
             </ul>
           </li>
             </ul>
